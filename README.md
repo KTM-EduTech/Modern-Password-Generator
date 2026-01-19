@@ -19,7 +19,7 @@ A beautiful, secure password generator using the Web Crypto API — no trackers,
 
 ## Live Demo
 
-→ [https://kydtantano.github.io/modern-password-generator/](https://kydtantano.github.io/modern-password-generator/)  
+→ [https://pasgen.ktm-edutech.net/](https://kydtantano.github.io/modern-password-generator/)  
 *(update once deployed)*
 
 ## Quick Start
