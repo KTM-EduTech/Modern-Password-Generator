@@ -20,7 +20,7 @@ A beautiful, secure password generator using the Web Crypto API — no trackers,
 ## Live Demo
 
 → [https://pasgen.ktm-edutech.net/](https://ktm-edutech.github.io/Modern-Password-Generator/)  
-*(update once deployed)*
+*(App URL)*
 
 ## Quick Start
 
