@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KTM EduTech Modern Password Generator</title>
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main class="card" role="main">
+    <header>
+      <div class="logo">PW</div>
+      <div>
+        <h1>Password Generator</h1>
+        <p class="lead">Create strong, random passwords — choose length and character types. Uses the browser crypto API for better randomness.</p>
+      </div>
+    </header>
+
+    <section class="output" aria-live="polite">
+      <div class="pw-text" id="password">—</div>
+      <div style="display:flex;gap:8px;">
+        <button class="ghost" id="copyBtn" title="Copy password">Copy</button>
+        <button class="btn" id="generateBtn">Generate</button>
+      </div>
+    </section>
+
+    <div class="controls">
+      <div class="panel">
+        <div class="row">
+          <label for="length">Password length</label>
+          <div class="range-wrap">
+            <input id="length" type="range" min="4" max="128" value="16">
+            <div class="chip" id="lengthVal">16</div>
+          </div>
+        </div>
+
+        <div class="options" role="group" aria-label="Character options">
+          <label class="tiny">Include characters</label>
+          <div class="option"><input type="checkbox" id="upper" checked><label for="upper">Uppercase (A-Z)</label></div>
+          <div class="option"><input type="checkbox" id="lower" checked><label for="lower">Lowercase (a-z)</label></div>
+          <div class="option"><input type="checkbox" id="numbers" checked><label for="numbers">Numbers (0-9)</label></div>
+          <div class="option"><input type="checkbox" id="symbols" checked><label for="symbols">Symbols (!@#$...)</label></div>
+          <div class="option"><input type="checkbox" id="noSimilar"><label for="noSimilar">Exclude similar characters (i, l, 1, O, 0)</label></div>
+        </div>
+
+        <div style="margin-top:12px;" class="tiny">
+          <strong>Tip</strong>: For passphrases, use length 30+ and fewer symbol types for memorability.
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="row">
+          <label>Strength</label>
+          <div class="strength">
+            <div class="meter" aria-hidden="true"><i id="meterFill"></i></div>
+            <div class="strength-text" id="strengthText">—</div>
+          </div>
+        </div>
+
+        <div style="margin-top:12px">
+          <label class="tiny">Entropy estimate</label>
+          <div class="row">
+            <div class="tiny" id="entropy">— bits</div>
+            <div class="tiny" id="charsetSize">— charset</div>
+          </div>
+        </div>
+
+        <footer>
+          <button class="ghost" id="copyBtn2">Copy</button>
+          <button class="btn" id="generateBtn2">Generate</button>
+        </footer>
+      </div>
+    </div>
+
+    <p class="tiny" style="margin-top:12px;">
+      Created by <strong>KTM EduTech</strong> by Kyd Tantano Masong. This page never sends data anywhere.
+    </p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
