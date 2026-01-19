@@ -2,8 +2,8 @@
 
 A beautiful, secure password generator using the Web Crypto API — no trackers, no dependencies.
 
-![Modern Password Generator screenshot](https://via.placeholder.com/760x520/0f1724/7c3aed?text=Modern+Password+Generator)  
-*(replace with real screenshot)*
+![Modern Password Generator screenshot](https://ktm-edutech.github.io/Modern-Password-Generator/password_generator_ux.png)  
+*(Modern Password Generator Interface)*
 
 ## Features
 
@@ -19,7 +19,7 @@ A beautiful, secure password generator using the Web Crypto API — no trackers,
 
 ## Live Demo
 
-→ [https://pasgen.ktm-edutech.net/](https://kydtantano.github.io/modern-password-generator/)  
+→ [https://pasgen.ktm-edutech.net/](https://ktm-edutech.github.io/Modern-Password-Generator/)  
 *(update once deployed)*
 
 ## Quick Start
